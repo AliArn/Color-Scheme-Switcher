@@ -1,0 +1,95 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering the Canvas */
+.canvas {
+    text-align: center;
+}
+
+/* Heading Styles */
+.canvas h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.canvas h2 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.canvas h2 span {
+    color: #888;
+    display: block;
+    margin-top: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: popIn 1s ease-in-out;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#white {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
